@@ -13,8 +13,7 @@ function task_backupdb($task)
 	global $db, $config, $lang, $plugins;
 	static $contents;
 
-	if(strpos(ini_get('disable_functions'),'set_time_limit')===false)
-		@set_time_limit(0);
+	my_set_time_limit();
 
 	if(!defined('MYBB_ADMIN_DIR'))
 	{

@@ -19,8 +19,7 @@ $upgrade_detail = array(
 	"requires_deactivated_plugins" => 1,
 );
 
-if(strpos(ini_get('disable_functions'),'set_time_limit')===false)
-	@set_time_limit(0);
+my_set_time_limit();
 
 // We need to globalize $db here because when this script is called
 // during load_module $db is not globalized in the function

@@ -20,8 +20,7 @@ $upgrade_detail = array(
 	"requires_deactivated_plugins" => 0,
 );
 
-if(strpos(ini_get('disable_functions'),'set_time_limit')===false)
-	@set_time_limit(0);
+my_set_time_limit();
 
 /* Nothing to do from 1.2.1 to 1.2.2 */
 

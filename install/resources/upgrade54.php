@@ -18,7 +18,6 @@ $upgrade_detail = array(
     "revert_all_settings" => 0
 );
 
-if(strpos(ini_get('disable_functions'),'set_time_limit')===false)
-	@set_time_limit(0);
+my_set_time_limit();
 
 /* Nothing to do for 1.8.28, 1.8.29 or 1.8.30 */

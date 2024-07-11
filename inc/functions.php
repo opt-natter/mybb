@@ -9479,3 +9479,20 @@ function mk_path_abs($path, $base = MYBB_ROOT)
 
 	return $path;
 }
+
+/**
+ * Sets the maximum execution time to 0 (zero)
+ *
+ * @return bool Returns true if the maximum execution time was set, false if it was not
+ */
+function my_set_time_limit()
+{
+    if(strpos(ini_get('disable_functions'),'set_time_limit') !== false)
+    {
+        return false;
+    }
+
+    set_time_limit(0);
+
+    return true;
+}
