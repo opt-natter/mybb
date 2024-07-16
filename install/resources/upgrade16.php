@@ -19,7 +19,5 @@ $upgrade_detail = array(
 	"revert_all_settings" => 0
 );
 
-my_set_time_limit();
-
 /* Nothing to do from 1.4.5 to 1.4.13 */
 

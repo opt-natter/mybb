@@ -18,8 +18,6 @@ $upgrade_detail = array(
 	"revert_all_settings" => 0
 );
 
-my_set_time_limit();
-
 function upgrade21_dbchanges()
 {
 	global $cache, $db, $output, $mybb;

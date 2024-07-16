@@ -19,8 +19,6 @@ $upgrade_detail = array(
 	"requires_deactivated_plugins" => 1,
 );
 
-my_set_time_limit();
-
 function upgrade4_dbchanges()
 {
 	global $db, $output;

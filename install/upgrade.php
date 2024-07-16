@@ -402,6 +402,8 @@ else
 	// Fetch current script we're in
 	if(function_exists($runfunction))
 	{
+        my_set_time_limit();
+
 		$runfunction();
 	}
 }

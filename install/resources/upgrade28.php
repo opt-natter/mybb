@@ -18,6 +18,4 @@ $upgrade_detail = array(
 	"revert_all_settings" => 0
 );
 
-my_set_time_limit();
-
 /* Nothing to do for 1.6.11 or 1.6.12 */

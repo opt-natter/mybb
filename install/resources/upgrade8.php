@@ -20,8 +20,6 @@ $upgrade_detail = array(
 	"requires_deactivated_plugins" => 0,
 );
 
-my_set_time_limit();
-
 function upgrade8_dbchanges()
 {
 	global $db, $output, $mybb;

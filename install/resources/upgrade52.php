@@ -18,8 +18,6 @@
      "revert_all_settings" => 0
 );
 
-my_set_time_limit();
-
 function upgrade52_dbchanges()
 {
 	global $output, $cache, $db, $mybb;
